@@ -11,7 +11,7 @@
                 <li class="nav-item"><a class="nav-link" href="xss-unsecure.php?data=<?= "<script>alert('Xss Test')</script>" ?>">3. Case</a></li>
                 <li class="nav-item"><a class="nav-link" href="xss-secure.php?data=<?= "<script>alert('Xss Test')</script>" ?>">4. Case</a></li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="javascript:void(0)" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         <img width="50" class="rounded-circle" src="https://avatars.githubusercontent.com/u/39022587" alt="EMRE KILIÇ">
                         EMRE KILIÇ
                     </a>
