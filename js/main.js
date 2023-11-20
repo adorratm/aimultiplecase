@@ -64,6 +64,10 @@ const createResultString = (key, displayedNum, state) => {
         return 0
     } 
 
+    if (keyType === 'backspace') {
+        return displayedNum.length === 1 ? 0 : displayedNum.slice(0, -1)
+    }
+
     if (keyType === 'calculate') {
         if(firstValue){
             if (previousKeyType === 'calculate') {
